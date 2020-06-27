@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+		<title>A simple calculator</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="calculator">
+				<div id="result-screen">
+					<div id="history">
+						<input type="text" id="history-value">
+					</div>
+					<div id="result">
+						<input type="text" id="result-value" placeholder="0">
+					</div>
+				</div>
+				<div id="keyboard">
+					<button class="operator" onclick="clearResult()">C</button>
+					<button class="empty"></button>
+					<button class="operator" onclick="getNumber('%')">%</button>
+					<button class="operator" style = "background-color: #20b2aa;" onclick="getNumber('/')">&#247;</button>
+					<button class="number" onclick="getNumber('7')">7</button>
+					<button class="number" onclick="getNumber('8')">8</button>
+					<button class="number"onclick="getNumber('9')">9</button>
+					<button class="operator" style = "background-color: #ffa500;" onclick="getNumber('*')">x</button>
+					<button class="number" onclick="getNumber('4')">4</button>
+					<button class="number" onclick="getNumber('5')">5</button>
+					<button class="number" onclick="getNumber('6')">6</button>
+					<button class="operator" style = "background-color: #f08080;" onclick="getNumber('-')">-</button>
+					<button class="number" onclick="getNumber('1')">1</button>
+					<button class="number" onclick="getNumber('2')">2</button>
+					<button class="number" onclick="getNumber('3')">3</button>
+					<button class="operator" style = "background-color: #7d93e0;" onclick="getNumber('+')">+</button>
+					<button class="number" onclick="getNumber('00')">00</button>
+					<button class="number" onclick="getNumber('0')">0</button>
+					<button class="number" onclick="getNumber('.')">.</button>
+					<button class="operator" style = "background-color: #9477af;" onclick="getResult()">=</button>
+				</div>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
